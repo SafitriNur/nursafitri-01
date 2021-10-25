@@ -17,7 +17,7 @@
 		                    <h5>Cari surat</h5>
 		                </td>
 		                <td width='1000'>
-		                    <div class="col-md-4">
+		                    <div class="col-md-8">
 		                        <?php echo form_open('arsip/search_surat') ?>
 		                        <div class="input-group mb-3">
 		                            <input type="text" class="form-control" placeholder="Search..." name="keyword"
@@ -80,7 +80,7 @@
 		    <div class="modal-dialog" kelas="document">
 		        <div class="modal-content">
 		            <div class="modal-header">
-		                <h3 class="modal-title" id="showMenuModal<?= $a['id'] ?>">Detail Arsip</h3>
+		                <h3 class="modal-title" id="showMenuModal<?= $a['id'] ?>">Lihat >> Arsip</h3>
 		                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		                    <span aria-hidden="true">&times;</span>
 		                </button>
@@ -119,9 +119,6 @@
 		                <a type="button" class="btn btn-success btn-icon" href="<?= base_url('arsip/download/' . $a['id']) ?>"
 		                    download>
 		                    Unduh
-		                </a>
-		                <a type="button" class="btn btn-primary btn-icon" href="#">
-		                    Edit/Ganti File
 		                </a>
 		            </div>
 		        </div>
@@ -169,16 +166,13 @@
 		                </div>
 		            </div>
 		            <div class="modal-footer">
-		                <a type="button" class="btn btn-warning btn-icon" href="<?= base_url('arsip') ?>">
+		                <a type="button" class="btn btn-outline-warning btn-icon" href="<?= base_url('arsip') ?>">
 		                    Kembali </a>
-		                <a type="button" class="btn btn-success btn-icon" href="<?= base_url('arsip/download/' . $a['id']) ?>"
+		                <a type="button" class="btn btn-outline-success btn-icon" href="<?= base_url('arsip/download/' . $a['id']) ?>"
 		                    download>
 		                    Unduh
 		                </a>
-		                <a type="button" class="btn btn-primary btn-icon" href="<?= base_url('arsip/tambah') ?>">Edit/Ganti
-		                    File</a>
-
-		                </a>
+	
 		            </div>
 		        </div>
 		    </div>
