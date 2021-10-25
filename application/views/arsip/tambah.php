@@ -46,9 +46,9 @@
                     </div>
                 </div>
 
-                <a class="btn btn-warning mb-3" href="<?= base_url('arsip') ?>">
+                <a class="btn btn-outline-warning mb-3" href="<?= base_url('arsip') ?>">
                     Kembali</a>
-                <button type="submit" class="btn btn-outline-primary">Simpan</button>
+                <button type="submit" class="btn btn-outline-primary mb-3">Simpan</button>
             </form>
             <?php echo form_close(); ?>
         </div>
